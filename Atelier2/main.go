@@ -7,5 +7,14 @@ func main() {
 	//numOne(s)
 
 	//Number 2
-	numTwo()
+	//numTwo()
+
+	//Number 3
+	//var x = 12
+	//numTree(&x, 10)
+	//fmt.Println(x)
+
+	//Number 4
+	var s string = "1-800-123-4567"
+	numFour(s)
 }

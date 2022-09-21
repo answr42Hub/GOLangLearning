@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lE mOnDe</title>
+</head>
+<body>
+    <h1>###TITRE###</h1>
+    <img src="assets/img/memequeen.png">
+    <script>
+        let ws = new WebSocket("ws://127.0.0.1:8080/ws");
+        ws.onmessage = function (event) {
+            console.log(event.data);
+        }
+        document.querySelector("img").addEventListener("click", function () {
+            ws.send("!!!! Coucou !!!!");
+        });
+    </script>
+</body>
+</html>

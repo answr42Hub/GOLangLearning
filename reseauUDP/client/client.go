@@ -1,1 +1,5 @@
-package client
+package main
+
+finc main() {
+
+}
